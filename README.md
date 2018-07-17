@@ -19,7 +19,7 @@ The script hasn't been tested across systems, etc., but it may be useful regardl
 
 Follow these steps to build the Singularity image:
 
-* Make sure you have [Singularity installed](http://singularity.lbl.gov/docs-installation) If you're on a Mac, this may entail setting up a [Vagrant](https://www.vagrantup.com/) virtual machine.
+* Make sure you have [Singularity installed](http://singularity.lbl.gov/docs-installation). If you're on a Mac, this may entail setting up a [Vagrant](https://www.vagrantup.com/) virtual machine.
 
 * Download the following NVIDIA requirements and *move them to this directory*:
 
