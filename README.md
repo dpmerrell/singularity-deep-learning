@@ -95,4 +95,6 @@ Epoch 2/20
 
 * [A Singularity Google Group discussion about GPUs](https://groups.google.com/a/lbl.gov/forum/#!topic/singularity/CezfXNjLGe0)
 
+* [CUDA/NVIDIA driver compatibility chart](https://stackoverflow.com/questions/30820513/what-is-version-of-cuda-for-nvidia-304-125/30820690#30820690). Note that TensorFlow does **not** support CUDA > 9.0 as of this writing.
+
 * [A similar repository from Clemson University](https://github.com/clemsonciti/singularity-images/tree/master/caffe). It differs from this repository in that it's kind of old, uses deprecated features from Singularity, makes stronger assumptions about versions, and is more complex.
