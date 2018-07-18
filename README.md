@@ -88,3 +88,11 @@ totalMemory: 15.90GiB freeMemory: 15.78GiB
 Epoch 2/20
 60000/60000 [==============================] - 4s 68us/step - loss: 0.1024 - acc: 0.9684 - val_loss: 0.0777 - val_acc: 0.9763
 ```
+
+## Other Useful Resources:
+
+* [TensorFlow Installation Instructions](https://www.tensorflow.org/install/install_linux)
+
+* [A Singularity Google Group discussion about GPUs](https://groups.google.com/a/lbl.gov/forum/#!topic/singularity/CezfXNjLGe0)
+
+* [A similar repository from Clemson University](https://github.com/clemsonciti/singularity-images/tree/master/caffe). It differs from this repository in that it's kind of old, uses deprecated features from Singularity, makes stronger assumptions about versions, and is more complex.
