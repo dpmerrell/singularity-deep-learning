@@ -1,6 +1,6 @@
-## A Singularity Container Recipe for Deep Learning
+# A Singularity Container Recipe for Deep Learning
 
-# Intended Purpose
+## Intended Purpose
 
 This repository contains the recipe for a [Singularity](https://singularity.lbl.gov/) container equipped with 
 [Scikit-Learn](http://scikit-learn.org/stable/), 
@@ -15,13 +15,15 @@ I had to dig through repositories, blog posts, and web forums.
 I hope this repository helps other people figure things out faster than I did.
 The script hasn't been tested across systems, etc., but it may be useful regardless.
 
-# Usage
+## Usage
 
 Follow these steps to build the Singularity image:
 
+* Go to a host where you have root access (e.g., your personal computer). Clone this repository and `mv` into it.
+
 * Make sure you have [Singularity installed](http://singularity.lbl.gov/docs-installation). If you're on a Mac, this may entail setting up a [Vagrant](https://www.vagrantup.com/) virtual machine.
 
-* Download the following NVIDIA requirements and *move them to this directory*:
+* Download the following NVIDIA requirements and **move them to this directory**:
 
     - The CUDA toolkit ([version 9.0 tends to be a safe choice, as of this writing](https://developer.nvidia.com/cuda-90-download-archive)).
       The file suffix should be ".run".
@@ -37,14 +39,14 @@ Follow these steps to build the Singularity image:
 
 * Run the script as root: `sudo bash build_image.sh`. Then relax. It takes a little bit of time to build the image.
 
-* Move the resulting image file somewhere that has Singularity installed, and has TensorFlow-capable GPUs.
+* `scp` the resulting image file to a host you want to work on---one that has Singularity installed, **and** has TensorFlow-capable GPUs.
 
 * Test your image, e.g., by running `singularity exec --nv <your image> python3 keras_mnist_test.py`
 
 If all goes well, you should see something like:
 
 ```
-$ singularity exec --nv tf_keras.simg python3 keras_mnist_test 
+$ singularity exec --nv tf_keras.simg python3 keras_mnist_test.py 
 Using TensorFlow backend.
 60000 train samples
 10000 test samples
