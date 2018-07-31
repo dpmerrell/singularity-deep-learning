@@ -1,0 +1,7 @@
+# big installer files
+*gz
+*.run
+
+# products and byproducts
+*.def
+*.simg

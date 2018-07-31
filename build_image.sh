@@ -16,8 +16,8 @@
 ######################################
 
 # NVIDIA driver version
-NVIDIA_VERSION="384.111"
-NVIDIA_MAJOR_VERSION="384"
+NVIDIA_VERSION="390.77"
+NVIDIA_MAJOR_VERSION="390"
 
 # CUDA version
 CUDA_VERSION="9.0.176_384.81"
@@ -28,15 +28,18 @@ CUDNN_VERSION="9.0-linux-x64-v7"
 # TensorFlow version
 TENSORFLOW_VERSION="1.5"
 
+# HDF5 version
+HDF5_VERSION="1.10.2-Std-centos7-x86_64-shared_64"
+
 ######################################
 # Set some other options
 ######################################
 
 # Name of image recipe file:
-DEFFILE_NAME="tf_keras.def"
+DEFFILE_NAME="tf_keras_nv390.def"
 
 # Name of singularity image:
-IMAGE_NAME="tf_keras.simg"
+IMAGE_NAME="tf_keras_nv390.simg"
 
 # Will this image be writable?
 WRITABLE=""
@@ -51,6 +54,7 @@ sed -i "s/__CUDA_VERSION__/$CUDA_VERSION/g" $DEFFILE_NAME
 sed -i "s/__CUDNN_VERSION__/$CUDNN_VERSION/g" $DEFFILE_NAME
 sed -i "s/__NVIDIA_MV__/$NVIDIA_MAJOR_VERSION/g" $DEFFILE_NAME
 sed -i "s/__TENSORFLOW_VERSION__/$TENSORFLOW_VERSION/g" $DEFFILE_NAME
+sed -i "s/__HDF5_VERSION__/$HDF5_VERSION/g" $DEFFILE_NAME
 
 
 ######################################
