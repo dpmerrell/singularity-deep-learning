@@ -19,7 +19,7 @@ The script hasn't been tested across systems, etc., but it may be useful regardl
 
 Follow these steps to build the Singularity image:
 
-* Go to a host where you have root access (e.g., your personal computer). Clone this repository and `mv` into it.
+* Go to a host where you have root access (e.g., your personal computer). Clone this repository and `cd` into it.
 
 * Make sure you have [Singularity installed](http://singularity.lbl.gov/docs-installation). If you're on a Mac, this may entail setting up a [Vagrant](https://www.vagrantup.com/) virtual machine.
 
